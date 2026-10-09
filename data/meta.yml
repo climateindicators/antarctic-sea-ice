@@ -1,0 +1,30 @@
+indicator:
+  name: Antarctic Sea Ice
+  slug: antarctic-sea-ice
+  publisher: U.S. Environmental Protection Agency
+  source_page: https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-antarctic-sea-ice/index.html
+  technical_documentation: https://19january2025snapshot.epa.gov/system/files/documents/2024-12/antarctic-sea-ice_td.pdf
+  rights: Public domain, work of the U.S. Government (17 U.S.C. 105)
+datasets:
+- file: antarctic_sea_ice_extent.csv
+  figure: Figure 1
+  figure_title: Figure 1. February and September Monthly Average Antarctic Sea Ice
+    Extent, 1979–2024
+  source_file: antarctic-sea-ice-fig-1.csv
+  source_sha256: bf077a2404af2f42c55bbff827eaf0284e6213b711425164b0ad3045f830d1ab
+  source_encoding: windows-1252
+  data_source: NSIDC, 2024
+  web_update: December 2024
+  unit: million square miles
+  rows: 92
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year.
+  - name: month
+    type: string
+    description: 'Month of the monthly average: February (annual minimum) or September
+      (annual maximum).'
+  - name: value
+    type: number
+    description: Monthly average Antarctic sea ice extent, in million square miles.
